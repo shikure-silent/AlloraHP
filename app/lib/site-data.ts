@@ -41,9 +41,11 @@ export const siteData = {
     status: "開発中",
     description:
       "日々の支出を自然に振り返り、無理なく貯金できる体験を目指した家計簿アプリ。",
+    url: "https://kakeibo-app-orcin.vercel.app",
+    urlLabel: "アプリを見る",
     roles: ["UI/UX設計", "フロントエンド実装", "iOSアプリ開発"],
     tech: ["SwiftUI", "Next.js", "TypeScript", "Supabase"],
-    note: "公開URLは準備中です。",
+    note: "デモ環境のため内容は変更される場合があります。",
   },
   recruit: {
     headline: "基本リモートの小さなチーム",
@@ -59,6 +61,5 @@ export const siteData = {
     responseNote: "原則2営業日以内にご連絡します。",
   },
   footer: {
-    message: "丁寧な設計と、美しい実装を。",
   },
 } as const;

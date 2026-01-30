@@ -9,24 +9,24 @@ export const metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="bg-[var(--paper)] text-[var(--ink)]">
+    <div className="bg-background text-foreground">
       <SiteHeader />
       <main className="mx-auto w-full max-w-4xl px-6 py-16">
-        <section className="rounded-3xl border border-[var(--line)] bg-[var(--card)] p-8 shadow-sm">
-          <p className="text-xs uppercase tracking-[0.3em] text-(--muted)">
+        <section className="rounded-3xl border border-border bg-card p-8 shadow-sm">
+          <p className="text-xs uppercase tracking-[0.3em] text-muted">
             Privacy Policy
           </p>
-          <h1 className="mt-3 text-3xl font-semibold text-[var(--ink)] font-[family:var(--font-display)]">
+          <h1 className="mt-3 text-3xl font-semibold text-foreground font-display">
             プライバシーポリシー
           </h1>
-          <p className="mt-4 text-sm text-(--muted)">
+          <p className="mt-4 text-sm text-muted">
             株式会社Allora（以下「当社」）は、お問い合わせ・採用応募により取得した個人情報を
             以下の方針に基づき適切に取り扱います。
           </p>
 
-          <div className="mt-8 space-y-6 text-sm text-(--muted)">
+          <div className="mt-8 space-y-6 text-sm text-muted">
             <div>
-              <h2 className="text-base font-semibold text-[var(--ink)]">
+              <h2 className="text-base font-semibold text-foreground">
                 取得する情報
               </h2>
               <p className="mt-2">
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
               </p>
             </div>
             <div>
-              <h2 className="text-base font-semibold text-[var(--ink)]">
+              <h2 className="text-base font-semibold text-foreground">
                 利用目的
               </h2>
               <p className="mt-2">
@@ -43,7 +43,7 @@ export default function PrivacyPage() {
               </p>
             </div>
             <div>
-              <h2 className="text-base font-semibold text-[var(--ink)]">
+              <h2 className="text-base font-semibold text-foreground">
                 第三者提供
               </h2>
               <p className="mt-2">
@@ -51,7 +51,7 @@ export default function PrivacyPage() {
               </p>
             </div>
             <div>
-              <h2 className="text-base font-semibold text-[var(--ink)]">
+              <h2 className="text-base font-semibold text-foreground">
                 保存期間
               </h2>
               <p className="mt-2">
@@ -59,13 +59,13 @@ export default function PrivacyPage() {
               </p>
             </div>
             <div>
-              <h2 className="text-base font-semibold text-[var(--ink)]">
+              <h2 className="text-base font-semibold text-foreground">
                 お問い合わせ窓口
               </h2>
               <p className="mt-2">
                 本ポリシーに関するお問い合わせは下記までご連絡ください。
               </p>
-              <p className="mt-2 text-[var(--ink)]">
+              <p className="mt-2 text-foreground">
                 {siteData.company.name} / {siteData.company.email}
               </p>
             </div>

@@ -15,7 +15,15 @@
 @theme inline {
   --color-background: var(--paper);
   --color-foreground: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-border: var(--line);
+  --color-surface: var(--paper-muted);
+  --color-card: var(--card);
   --font-sans: var(--font-body);
+  --font-display: var(--font-display);
 }
 
 * {
