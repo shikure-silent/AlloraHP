@@ -60,6 +60,4 @@ export const siteData = {
     recruitRoles: ["エンジニア", "デザイナー", "PM", "その他"],
     responseNote: "原則2営業日以内にご連絡します。",
   },
-  footer: {
-  },
 } as const;
