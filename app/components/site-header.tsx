@@ -15,7 +15,13 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border bg-[rgba(255,247,241,0.92)] backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-4">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/logo.svg" alt="Allora logo" width={44} height={44} />
+          <Image
+            src="/logo.svg"
+            alt="Allora logo"
+            width={38}
+            height={38}
+            className="h-[38px] w-[38px] object-contain"
+          />
           <div className="flex flex-col leading-tight">
             <span className="text-sm font-medium">{siteData.company.name}</span>
             <span className="text-xs text-muted">
