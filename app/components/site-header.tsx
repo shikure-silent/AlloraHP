@@ -1,16 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { siteData } from "../lib/site-data";
 
 const navItems = [
-  { label: "会社情報", href: "/#company" },
-  { label: "サービス", href: "/#services" },
-  { label: "実績", href: "/#works" },
-  { label: "採用", href: "/#recruit" },
+  { label: "トップ", href: "/" },
+  { label: "会社情報", href: "/company" },
+  { label: "サービス", href: "/services" },
+  { label: "実績", href: "/works" },
+  { label: "採用", href: "/recruit" },
   { label: "お問い合わせ", href: "/contact" },
 ];
 
 export default function SiteHeader() {
+  const pathname = usePathname();
+
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-[rgba(255,247,241,0.92)] backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-4">
@@ -34,7 +40,12 @@ export default function SiteHeader() {
             <Link
               key={item.label}
               href={item.href}
-              className="transition hover:text-foreground"
+              aria-current={pathname === item.href ? "page" : undefined}
+              className={`transition hover:text-foreground ${
+                pathname === item.href
+                  ? "font-semibold text-foreground"
+                  : "text-muted"
+              }`}
             >
               {item.label}
             </Link>
@@ -54,7 +65,12 @@ export default function SiteHeader() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="whitespace-nowrap transition hover:text-foreground"
+                aria-current={pathname === item.href ? "page" : undefined}
+                className={`whitespace-nowrap transition hover:text-foreground ${
+                  pathname === item.href
+                    ? "font-semibold text-foreground"
+                    : "text-muted"
+                }`}
               >
                 {item.label}
               </Link>
