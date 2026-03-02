@@ -6,8 +6,7 @@ import { siteData } from "../lib/site-data";
 
 export const metadata = {
   title: "サービス",
-  description:
-    "株式会社Alloraが提供するWeb制作・Webアプリ開発・iOSアプリ開発の紹介です。",
+  description: "株式会社Alloraが提供するWeb制作・Webアプリ開発の紹介です。",
 };
 
 export default function ServicesPage() {
@@ -15,9 +14,13 @@ export default function ServicesPage() {
     <div className="bg-background text-foreground">
       <SiteHeader />
       <main className="mx-auto w-full max-w-6xl px-6 py-16">
-        <Breadcrumbs items={[{ label: "トップ", href: "/" }, { label: "サービス" }]} />
+        <Breadcrumbs
+          items={[{ label: "トップ", href: "/" }, { label: "サービス" }]}
+        />
         <section>
-          <p className="text-xs uppercase tracking-[0.3em] text-muted">Services</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-muted">
+            Services
+          </p>
           <h1 className="mt-3 text-4xl font-semibold text-foreground font-display">
             サービス
           </h1>

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | 株式会社Allora",
   },
   description:
-    "株式会社AlloraはWeb制作・Webアプリ・iOSアプリのデザインと開発を行うクリエイティブチームです。",
+    "株式会社AlloraはWeb制作・Webアプリ開発を行うクリエイティブチームです。",
   openGraph: {
     title: "株式会社Allora",
     description:
@@ -32,8 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "株式会社Allora",
-    description:
-      "Web制作・Webアプリ・iOSアプリのデザインと開発を行う株式会社Alloraの公式サイト。",
+    description: "Web制作・Webアプリ開発を行う株式会社Alloraの公式サイト。",
   },
 };
 

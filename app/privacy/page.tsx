@@ -1,3 +1,4 @@
+import Breadcrumbs from "../components/breadcrumbs";
 import SiteFooter from "../components/site-footer";
 import SiteHeader from "../components/site-header";
 import { siteData } from "../lib/site-data";
@@ -12,6 +13,9 @@ export default function PrivacyPage() {
     <div className="bg-background text-foreground">
       <SiteHeader />
       <main className="mx-auto w-full max-w-4xl px-6 py-16">
+        <Breadcrumbs
+          items={[{ label: "トップ", href: "/" }, { label: "プライバシーポリシー" }]}
+        />
         <section className="rounded-3xl border border-border bg-card p-8 shadow-sm">
           <p className="text-xs uppercase tracking-[0.3em] text-muted">
             Privacy Policy

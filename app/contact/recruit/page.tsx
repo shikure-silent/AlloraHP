@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Breadcrumbs from "../../components/breadcrumbs";
 import SiteFooter from "../../components/site-footer";
 import SiteHeader from "../../components/site-header";
 import { siteData } from "../../lib/site-data";
@@ -16,6 +17,13 @@ export default function RecruitContactPage() {
     <div className="bg-background text-foreground">
       <SiteHeader />
       <main className="mx-auto w-full max-w-6xl px-6 py-16">
+        <Breadcrumbs
+          items={[
+            { label: "トップ", href: "/" },
+            { label: "お問い合わせ", href: "/contact" },
+            { label: "採用お問い合わせ" },
+          ]}
+        />
         <section className="mb-12">
           <p className="text-xs uppercase tracking-[0.3em] text-muted">
             Contact
