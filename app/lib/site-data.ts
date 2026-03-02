@@ -66,7 +66,6 @@ export const siteData = {
           "TypeScript",
           "Tailwind CSS",
           "Capacitor",
-          "Swift",
           "Supabase",
         ],
       },
