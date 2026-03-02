@@ -12,7 +12,19 @@ export default function SiteFooter() {
             © {currentYear} {siteData.company.name}
           </p>
         </div>
-        <div className="flex items-center gap-6 text-sm text-muted">
+        <div className="flex flex-wrap items-center gap-4 text-sm text-muted">
+          <Link href="/company" className="transition hover:text-foreground">
+            会社情報
+          </Link>
+          <Link href="/services" className="transition hover:text-foreground">
+            サービス
+          </Link>
+          <Link href="/works" className="transition hover:text-foreground">
+            実績
+          </Link>
+          <Link href="/recruit" className="transition hover:text-foreground">
+            採用
+          </Link>
           <Link href="/privacy" className="transition hover:text-foreground">
             プライバシーポリシー
           </Link>
